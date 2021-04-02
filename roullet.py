@@ -48,23 +48,26 @@ def num(num,money):
 		else:
 			print(resulta)
 			print("you loose")
-			print(money)
 
 def color ():
 	col= input("color red or black:")
 	if col == ("red"):
 		if resultared == ("true"):
 			print("you win")
+			money = moeny+bet*2
 		else:
 			print("you loose")
+			money = moeny-bet
 			pass
 	else:
 		if col == ("black"):
 			if reslutabalck == ("true"):
 				print("you win")
+				money = moeny+bet*2
 			else:
 				if reslutabalck == ("false"):
 					print("you loose")
+					money = moeny-bet
 				pass
 			pass
 		pass
